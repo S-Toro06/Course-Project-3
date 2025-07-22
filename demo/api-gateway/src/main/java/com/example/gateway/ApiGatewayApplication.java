@@ -1,26 +1,24 @@
-package com.example.eureka;
+package com.example.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-@EnableEurekaServer
-public class EurekaServerApplication {
-
+public class ApiGatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServerApplication.class, args);
+        SpringApplication.run(ApiGatewayApplication.class, args);
 
         System.out.println("""
             
             ╔════════════════════════════════════════════════════════════════╗
-            ║                    EUREKA SERVER STARTED                       ║
+            ║                      API GATEWAY STARTED                       ║
             ║                                                                ║
-            ║  🔍 Service Discovery Dashboard: http://localhost:8761         ║
-            ║  📊 All microservices will register here                       ║
-            ║  🔄 Provides load balancing and health checking                ║
+            ║  🚪 Single Entry Point: http://localhost:8080                  ║
+            ║  🔀 Routes requests to appropriate microservices               ║
+            ║  ⚖️  Load balances across service instances                     ║
+            ║  🛡️  Handles cross-cutting concerns (auth, logging)            ║
             ║                                                                ║
-            ║  LEARNING TIP: Open the dashboard to see registered services   ║
+            ║  LEARNING TIP: All client requests go through this gateway     ║
             ╚════════════════════════════════════════════════════════════════╝
             """);
     }
