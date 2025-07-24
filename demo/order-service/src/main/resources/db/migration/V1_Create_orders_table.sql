@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS orders (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    customer_name VARCHAR(255) NOT NULL,
+    Cabs TEXT NOT NULL,
+    Miles INTEGER NOT NULL,
+    total_amount DECIMAL(10,2) NOT NULL,
+    status VARCHAR(50) NOT NULL,
+);
