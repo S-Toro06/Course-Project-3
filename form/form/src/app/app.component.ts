@@ -53,7 +53,7 @@ export class AppComponent {
   isFormValid(): boolean {
     return this.orderRequest.customerName.trim() !== '' &&
     this.orderRequest.Cabs.trim() !== '' &&
-    this.orderRequest.Mlies.trim() > 0;
+    this.orderRequest.Miles > 0;
   }
 
   clearForm() {
