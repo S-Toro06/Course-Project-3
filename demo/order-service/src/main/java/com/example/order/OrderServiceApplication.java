@@ -15,15 +15,11 @@ public class OrderServiceApplication {
 
         System.out.println("""
             
-            ╔════════════════════════════════════════════════════════════════╗
-            ║                      ORDER SERVICE STARTED                     ║
-            ║                                                                ║
-            ║  📝 Handles order creation and management                      ║
-            ║  🔗 Communicates with Pricing service                          ║
-            ║  💾 Uses in-memory storage for simplicity                      ║
-            ║                                                                ║
-            ║  Available at: http://localhost:8081/api/orders                ║
-            ╚════════════════════════════════════════════════════════════════╝
+         
+                                  ORDER SERVICE STARTED                                           
+                                                                            
+              Available at: http://localhost:8081/api/orders                
+            
             """);
     }
 

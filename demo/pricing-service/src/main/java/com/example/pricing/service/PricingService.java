@@ -35,7 +35,7 @@ public class PricingService {
         if (lowerItems.contains("electric") || lowerItems.contains("gas")) {
             factor += 0.3;
     }
-        return Math.max(0.8, Math.min(2.0, factor));
+        return Math.min(2.0, factor);
 
     }
 }

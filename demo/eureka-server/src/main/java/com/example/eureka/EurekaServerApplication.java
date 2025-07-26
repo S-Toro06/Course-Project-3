@@ -14,14 +14,10 @@ public class EurekaServerApplication {
 
             System.out.println("""
             
-            ╔════════════════════════════════════════════════════════════════╗
-            ║                    EUREKA SERVER STARTED                       ║
-            ║                                                                ║
-            ║  🔍 Service Discovery Dashboard: http://localhost:8761         ║
-            ║  📊 All microservices will register here                       ║
-            ║  🔄 Provides load balancing and health checking                ║
-            ║                                                                ║
-            ╚════════════════════════════════════════════════════════════════╝
+                                EUREKA SERVER STARTED                       
+                                                                            
+               Service Discovery Dashboard: http://localhost:8761                    
+                                                                            
             """);
         }
 }

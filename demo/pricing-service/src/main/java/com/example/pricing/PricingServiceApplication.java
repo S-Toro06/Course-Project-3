@@ -11,15 +11,11 @@ public class PricingServiceApplication {
 
         System.out.println("""
             
-            ╔════════════════════════════════════════════════════════════════╗
-            ║                      PRICING SERVICE STARTED                   ║
-            ║                                                                ║
-            ║  📝 Handles price calculation                                  ║
-            ║  🔗 Communicates with Order service                            ║
-            ║                                                                ║
-            ║                                                                ║
-            ║  Available at: http://localhost:8082/api/pricing               ║
-            ╚════════════════════════════════════════════════════════════════╝
+            
+                                  PRICING SERVICE STARTED                                                      
+                                                                           
+              Available at: http://localhost:8082/api/pricing               
+      
             """);
     }
 }

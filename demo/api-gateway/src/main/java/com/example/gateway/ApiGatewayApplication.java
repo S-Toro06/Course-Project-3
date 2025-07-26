@@ -10,16 +10,11 @@ public class ApiGatewayApplication {
 
         System.out.println("""
             
-            ╔════════════════════════════════════════════════════════════════╗
-            ║                      API GATEWAY STARTED                       ║
-            ║                                                                ║
-            ║  🚪 Single Entry Point: http://localhost:8080                  ║
-            ║  🔀 Routes requests to appropriate microservices               ║
-            ║  ⚖️  Load balances across service instances                     ║
-            ║  🛡️  Handles cross-cutting concerns (auth, logging)            ║
-            ║                                                                ║
-            ║  LEARNING TIP: All client requests go through this gateway     ║
-            ╚════════════════════════════════════════════════════════════════╝
+           
+                                  API GATEWAY STARTED                       
+                                                                            
+               Entry Point: http://localhost:8080                  
+          
             """);
     }
 }
