@@ -55,7 +55,7 @@ public class OrderController {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, Object>> handleException(Exception e) {
         Map<String, Object> errorResponse = new HashMap<>();
-        errorResponse.put("erorr", "Cab processing failed");
+        errorResponse.put("error", "Cab processing failed");
         errorResponse.put("message", "Unable to process cab at this time. Please try again later.");
         errorResponse.put("timestamp", java.time.Instant.now().toString());
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(errorResponse);
