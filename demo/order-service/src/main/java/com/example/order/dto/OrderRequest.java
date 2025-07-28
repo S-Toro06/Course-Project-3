@@ -1,5 +1,6 @@
 package com.example.order.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -9,18 +10,18 @@ public class OrderRequest {
     private String customerName;
 
     @NotBlank(message = "Cab service is required")
-    private String Cabs;
+    private String cabs;
 
     @NotNull(message = "Number of miles is required")
     @Positive (message = "Number of miles must be positive")
-    private Integer Miles;
+    private Integer miles;
 
     public OrderRequest() {}
 
-    public OrderRequest(String customerName, String Cabs, Integer Miles) {
+    public OrderRequest(String customerName, String cabs, Integer miles) {
         this.customerName = customerName;
-        this.Cabs = Cabs;
-        this.Miles = Miles;
+        this.cabs = cabs;
+        this.miles = miles;
     }
 
     public String getCustomerName() {
@@ -32,18 +33,18 @@ public class OrderRequest {
     }
 
     public String getCabs() {
-        return Cabs;
+        return cabs;
     }
 
     public void setCabs(String cabs) {
-        Cabs = cabs;
+        this.cabs = cabs;
     }
 
     public Integer getMiles() {
-        return Miles;
+        return miles;
     }
 
     public void setMiles(Integer miles) {
-        Miles = miles;
+        this.miles = miles;
     }
 }

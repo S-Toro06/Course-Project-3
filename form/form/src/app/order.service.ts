@@ -4,15 +4,15 @@ import { firstValueFrom } from 'rxjs';
 
 export interface OrderRequest {
     customerName: string;
-    Cabs: string;
-    Miles: number;
+    cabs: string;
+    miles: number;
 }
 
 export interface OrderResponse {
     orderId: number;
     customerName: string;
-    Cabs: string;
-    Miles: number;
+    cabs: string;
+    miles: number;
     totalPrice: number;
     status: string;
 }

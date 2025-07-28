@@ -22,11 +22,11 @@ public class PricingService {
         return new PricingResponse(totalAmount);
     }
 
-    private double calculateComplexityFactor(String Cabs) {
-        if (Cabs == null || Cabs.trim().isEmpty()) {
+    private double calculateComplexityFactor(String cabs) {
+        if (cabs == null || cabs.trim().isEmpty()) {
             return 1.0;
         }
-        String lowerItems = Cabs.toLowerCase();
+        String lowerItems = cabs.toLowerCase();
         double factor = 1.0;
 
         if (lowerItems.contains("luxury") || lowerItems.contains("premium")) {

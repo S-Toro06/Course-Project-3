@@ -15,8 +15,8 @@ export class AppComponent {
 
   orderRequest: OrderRequest = {
     customerName: '',
-    Cabs: '',
-    Miles: 1
+    cabs: '',
+    miles: 1
   };
 
   orderResponse: OrderResponse | null = null;
@@ -52,15 +52,15 @@ export class AppComponent {
 
   isFormValid(): boolean {
     return this.orderRequest.customerName.trim() !== '' &&
-    this.orderRequest.Cabs.trim() !== '' &&
-    this.orderRequest.Miles > 0;
+    this.orderRequest.cabs.trim() !== '' &&
+    this.orderRequest.miles > 0;
   }
 
   clearForm() {
     this.orderRequest = {
       customerName: '',
-      Cabs: '',
-      Miles: 1
+      cabs: '',
+      miles: 1
     };
     this.orderResponse = null;
     this.errorMessage = '';

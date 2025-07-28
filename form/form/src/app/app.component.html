@@ -11,17 +11,17 @@
     </div>
 
     <div class="form-group">
-      <label for="Cabs">Cabs:</label>
+      <label for="cabs">Cabs:</label>
       <textarea
-      id="Cabs" name="Cabs"
-      [(ngModel)]="orderRequest.Cabs"
+      id="cabs" name="cabs"
+      [(ngModel)]="orderRequest.cabs"
       placeholder="Enter which cab (Electric, Gas / Luxury, Premium)"></textarea>
     </div>
 
     <div class="form-group">
-      <label for="Miles">Number of Miles:</label>
-      <input type="number" id="Miles" name="Miles"
-      [(ngModel)]="orderRequest.Miles" placeholder="Enter numer of miles">
+      <label for="miles">Number of Miles:</label>
+      <input type="number" id="miles" name="miles"
+      [(ngModel)]="orderRequest.miles" placeholder="Enter numer of miles">
     </div>
 
     <button type="submit">Create Order</button>
@@ -44,8 +44,8 @@
     <h4>Order Details</h4>
     <p><strong>Order ID:</strong> {{ orderResponse.orderId }}</p>
     <p><strong>Customer:</strong>{{ orderResponse.customerName }}</p>
-    <p><strong>Which Cab:</strong>{{ orderResponse.Cabs }}</p>
-    <p><strong>Number of Miles:</strong>{{ orderResponse.Miles }}</p>
+    <p><strong>Which Cab:</strong>{{ orderResponse.cabs }}</p>
+    <p><strong>Number of Miles:</strong>{{ orderResponse.miles }}</p>
     <p><strong>Status:</strong>{{ orderResponse.status }}</p>
     <p class="total-price"><strong>Total Price: ${{ orderResponse.totalPrice | number: '1.2-2'}}</strong></p>
   </div>

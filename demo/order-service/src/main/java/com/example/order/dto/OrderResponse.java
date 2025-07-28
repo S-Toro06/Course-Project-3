@@ -4,18 +4,18 @@ public class OrderResponse {
 
     private Long orderId;
     private String customerName;
-    private String Cabs;
-    private Integer Miles;
+    private String cabs;
+    private Integer miles;
     private double totalPrice;
     private String status;
 
     public OrderResponse() {}
 
-    public OrderResponse(Long orderId, String customerName, String Cabs, Integer Miles, double totalPrice, String status) {
+    public OrderResponse(Long orderId, String customerName, String cabs, Integer miles, double totalPrice, String status) {
         this.orderId = orderId;
         this.customerName = customerName;
-        this.Cabs = Cabs;
-        this.Miles = Miles;
+        this.cabs = cabs;
+        this.miles = miles;
         this.totalPrice = totalPrice;
         this.status = status;
     }
@@ -37,19 +37,19 @@ public class OrderResponse {
     }
 
     public String getCabs() {
-        return Cabs;
+        return cabs;
     }
 
     public void setCabs(String cabs) {
-        Cabs = cabs;
+        this.cabs = cabs;
     }
 
     public Integer getMiles() {
-        return Miles;
+        return miles;
     }
 
     public void setMiles(Integer miles) {
-        Miles = miles;
+        this.miles = miles;
     }
 
     public double getTotalPrice() {
