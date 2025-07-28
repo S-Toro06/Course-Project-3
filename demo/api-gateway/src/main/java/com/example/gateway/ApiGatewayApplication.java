@@ -8,13 +8,6 @@ public class ApiGatewayApplication {
     public static void main(String[] args) {
         SpringApplication.run(ApiGatewayApplication.class, args);
 
-        System.out.println("""
-            
-           
-                                  API GATEWAY STARTED                       
-                                                                            
-               Entry Point: http://localhost:8080                  
-          
-            """);
+        System.out.println("API GATEWAY STARTED Entry Point: http://localhost:8080");
     }
 }

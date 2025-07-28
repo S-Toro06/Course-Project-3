@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>demo</artifactId>
+        <artifactId>Course-Project</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <artifactId>api-gateway</artifactId>
     <name>API Gateway</name>
-    <description>Gateway</description>
+    <description>Central entry point for all microservices - handles routing, load balancing, and cross-cutting concerns</description>
 
     <dependencies>
 
@@ -26,11 +26,11 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <!-- LESSON NOTE: Circuit Breaker for resilience -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
         </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

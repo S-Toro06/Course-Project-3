@@ -9,8 +9,8 @@ public class OrderPricingRequest {
 
     public OrderPricingRequest(String customerName, String Cabs, Integer Miles) {
         this.customerName = customerName;
-        Cabs = Cabs;
-        Miles = Miles;
+        this.Cabs = Cabs;
+        this.Miles = Miles;
 
     }
 
